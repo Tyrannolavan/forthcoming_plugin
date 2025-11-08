@@ -1,0 +1,1 @@
+This is my Paper MC plugin, "The Forthcoming", and it's main goal is to torture players that kill other peoples' pets.  To use it, download the jar in "Target", which is the executable plugin file, and put it in your Paper server's plugins folder.  This is also my first major Java project, so it might not work as smooth as expected.  But that's fine I guess.
