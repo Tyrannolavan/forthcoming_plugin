@@ -177,8 +177,8 @@ public class Forthcoming extends JavaPlugin implements Listener {
         petKillTracker.computeIfAbsent(killerId, k -> new ConcurrentHashMap<>())
                 .merge(key, 1, Integer::sum);
 
-        // Save to file after each kill
-        savePetKills();
+        // Save to file asynchronously
+        Bukkit.getScheduler().runTaskAsynchronously(this, this::savePetKills);
     }
 
     private ItemStack createPetKillBook(Player killer) {
